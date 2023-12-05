@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34018.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrashPluginExample", "CrashPluginExample\CrashPluginExample.csproj", "{C32E26DB-D33C-4B3F-8AF1-06E81A0DF93D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrashDefinitions", "CrashDefinitions\CrashDefinitions.csproj", "{5E08686A-C6C8-4CA5-88C7-371D14312148}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C32E26DB-D33C-4B3F-8AF1-06E81A0DF93D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C32E26DB-D33C-4B3F-8AF1-06E81A0DF93D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C32E26DB-D33C-4B3F-8AF1-06E81A0DF93D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C32E26DB-D33C-4B3F-8AF1-06E81A0DF93D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E08686A-C6C8-4CA5-88C7-371D14312148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E08686A-C6C8-4CA5-88C7-371D14312148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E08686A-C6C8-4CA5-88C7-371D14312148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E08686A-C6C8-4CA5-88C7-371D14312148}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F7337DB-D69D-485E-BB76-9C39606521CB}
+	EndGlobalSection
+EndGlobal

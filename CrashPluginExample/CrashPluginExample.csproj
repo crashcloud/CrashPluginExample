@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net7.0</TargetFrameworks>
+    <Version>1.0</Version>
+    <Title>CrashPluginExample</Title>
+    <Description>Description of CrashPluginExample</Description>
+    <TargetExt>.rhp</TargetExt>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="EmbeddedResources\**\*" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="RhinoCommon" Version="8.0.23164.14305-wip" IncludeAssets="compile;build" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\CrashDefinitions\CrashDefinitions.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="Crash.Changes">
+      <HintPath>..\..\gits\crash\src\Crash.Handlers\bin\Debug\net7.0\Crash.Changes.dll</HintPath>
+    </Reference>
+    <Reference Include="Crash.Common">
+      <HintPath>..\..\gits\crash\src\Crash.Handlers\bin\Debug\net7.0\Crash.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Crash.Handlers">
+      <HintPath>..\..\gits\crash\src\Crash.Handlers\bin\Debug\net7.0\Crash.Handlers.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  
+</Project>

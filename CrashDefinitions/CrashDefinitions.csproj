@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <TargetExt>.mup</TargetExt>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RhinoCommon" Version="8.0.23164.14305-wip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Crash.Changes">
+      <HintPath>..\..\gits\crash\src\Crash.Handlers\bin\Debug\net7.0\Crash.Changes.dll</HintPath>
+    </Reference>
+    <Reference Include="Crash.Common">
+      <HintPath>..\..\gits\crash\src\Crash.Handlers\bin\Debug\net7.0\Crash.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Crash.Handlers">
+      <HintPath>..\..\gits\crash\src\Crash.Handlers\bin\Debug\net7.0\Crash.Handlers.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
