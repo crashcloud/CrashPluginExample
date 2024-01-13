@@ -1,4 +1,5 @@
 
+using System.Drawing;
 using Crash.Changes;
 using CrashDefinitions.Recieve;
 using Rhino.Display;
@@ -50,7 +51,7 @@ namespace Crash.Handlers.Plugins.Request
                 drawArgs.Display.DrawBox(CachedBox, material.Diffuse, 5);
 
                 var topLeft = CachedBox.PointAt(1, 1, 1);
-                drawArgs.Display.DrawDot(topLeft, change.Owner);
+                drawArgs.Display.DrawDot(topLeft, requestChange.Owner, Color.White, Color.Black);
             }
 		}
 

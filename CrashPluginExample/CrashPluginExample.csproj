@@ -1,11 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net7.0</TargetFrameworks>
+    <TargetFrameworks>net48;net7.0</TargetFrameworks>
     <Version>1.0</Version>
     <Title>CrashPluginExample</Title>
     <Description>Description of CrashPluginExample</Description>
     <TargetExt>.rhp</TargetExt>
+	  <LangVersion>11</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,23 +14,14 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="RhinoCommon" Version="8.0.23164.14305-wip" IncludeAssets="compile;build" />
+    <PackageReference Include="Crash.Plugins" Version="1.4.0-beta" />
+    <PackageReference Include="Crash.Changes" Version="1.2.0" />
+    <PackageReference Include="RhinoCommon" Version="7.21.22208.13001" IncludeAssets="compile;build" Condition="'$(TargetFramework)' == 'net48'"/>
+		<PackageReference Include="RhinoCommon" Version="8.3.24009.15001" IncludeAssets="compile;build" Condition="'$(TargetFramework)' == 'net7.0'"/>
   </ItemGroup>
   
   <ItemGroup>
     <ProjectReference Include="..\CrashDefinitions\CrashDefinitions.csproj" />
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Reference Include="Crash.Changes">
-      <HintPath>..\..\gits\crash\src\Crash.Handlers\bin\Debug\net7.0\Crash.Changes.dll</HintPath>
-    </Reference>
-    <Reference Include="Crash.Common">
-      <HintPath>..\..\gits\crash\src\Crash.Handlers\bin\Debug\net7.0\Crash.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Crash.Handlers">
-      <HintPath>..\..\gits\crash\src\Crash.Handlers\bin\Debug\net7.0\Crash.Handlers.dll</HintPath>
-    </Reference>
   </ItemGroup>
   
 </Project>

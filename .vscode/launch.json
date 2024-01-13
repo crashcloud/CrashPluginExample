@@ -1,0 +1,64 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Rhino 8 (Mac .NET 7 ARM64)",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "/Applications/Rhino 8.app/Contents/MacOS/Rhinoceros",
+            "targetArchitecture": "arm64",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "externalConsole": false,
+            "env": {
+                // optional: register your plugin(s) to load
+                "RHINO_PLUGIN_PATH": "${workspaceFolder}/CrashPluginExample/bin/Debug/net7.0/CrashPluginExample.rhp",
+                // "GRASSHOPPER_PLUGINS": "${workspaceFolder}/Path/To/MyGHPlugin.gha"
+            }
+        },
+        {
+            "name": "Rhino 8 (Mac .NET 7 Intel/Rosetta)",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "/Applications/Rhino 8.app/Contents/MacOS/Rhinoceros",
+            "targetArchitecture": "x86_64",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "externalConsole": false,
+            "env": {
+                // optional: register your plugin(s) to load
+                "RHINO_PLUGIN_PATH": "${workspaceFolder}/CrashPluginExample/bin/Debug/net7.0/CrashPluginExample.rhp",
+                // "GRASSHOPPER_PLUGINS": "${workspaceFolder}/Path/To/MyGHPlugin.gha"
+            }
+        },
+        {
+            "name": "Rhino 7 (Win net48)",
+            "request": "launch",
+            "program": "C:/Program Files/Rhino 7/System/Rhino.exe",
+            "targetArchitecture": "x86_64",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "externalConsole": false,
+        },
+        {
+            "name": "Rhino 8 (Win net7.0)",
+            "request": "launch",
+            "program": "C:/Program Files/Rhino 8/System/Rhino.exe",
+            "args": "/dotnet",
+            "targetArchitecture": "x86_64",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "externalConsole": false,
+        },
+        {
+            "name": "Rhino 8 (Win net48)",
+            "request": "launch",
+            "program": "C:/Program Files/Rhino 8/System/Rhino.exe",
+            "args": "/netfx",
+            "targetArchitecture": "x86_64",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "externalConsole": false,
+        },
+    ]
+}

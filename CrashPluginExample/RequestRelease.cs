@@ -50,7 +50,7 @@ namespace CrashPluginExample
                 return Result.Cancel;
 
             var args = new RequestEventArgs(crashDoc, userName);
-            crashDoc.Dispatcher.NotifyServerAsync(ChangeAction.Add, this, args, crashDoc);
+            crashDoc.Dispatcher.NotifyServerAsync(ChangeAction.Add, this, args);
 
             return Result.Success;
         }
