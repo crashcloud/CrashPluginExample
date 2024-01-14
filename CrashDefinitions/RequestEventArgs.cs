@@ -1,7 +1,7 @@
 ﻿using Crash.Common.Document;
 using Crash.Common.Events;
 
-namespace Crash.Handlers.Plugins.Request
+namespace CrashDefinitions.Request
 {
     public sealed class RequestEventArgs : CrashEventArgs
     {

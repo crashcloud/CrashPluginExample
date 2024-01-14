@@ -1,7 +1,7 @@
 using Crash.Changes;
 using System.Text.Json;
 
-namespace Crash.Handlers.Plugins.Request
+namespace CrashDefinitions.Request
 {
     public sealed class RequestChange : IChange
 	{

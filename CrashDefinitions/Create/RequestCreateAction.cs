@@ -1,7 +1,8 @@
 using System.Text.Json;
 using Crash.Changes;
 using Crash.Handlers.Plugins;
-using Crash.Handlers.Plugins.Request;
+using CrashDefinitions;
+using CrashDefinitions.Request;
 
 namespace CrashDefinitions.Create
 {
@@ -37,7 +38,7 @@ namespace CrashDefinitions.Create
 
         public bool CanConvert(object sender, CreateRecieveArgs crashArgs)
         {
-            return crashArgs is RequestEventArgs;
+            return crashArgs.Args is RequestEventArgs;
         }
     }
 }

@@ -2,7 +2,8 @@ using Crash.Changes;
 using Crash.Changes.Extensions;
 using Crash.Common.Document;
 using Crash.Handlers.Plugins;
-using Crash.Handlers.Plugins.Request;
+using CrashDefinitions;
+using CrashDefinitions.Request;
 
 namespace CrashDefinitions.Recieve
 {

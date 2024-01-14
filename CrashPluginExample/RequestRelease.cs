@@ -1,6 +1,6 @@
 ﻿using Crash.Changes;
 using Crash.Handlers;
-using Crash.Handlers.Plugins.Request;
+using CrashDefinitions.Request;
 using Rhino;
 using Rhino.Commands;
 using Rhino.Input;
@@ -21,7 +21,7 @@ namespace CrashPluginExample
         public static RequestRelease Instance { get; private set; }
 
         ///<returns>The command name as it appears on the Rhino command line.</returns>
-        public override string EnglishName => nameof(RequestRelease);
+        public override string EnglishName => "PleaseRelease";
 
         protected override Result RunCommand(RhinoDoc doc, RunMode mode)
         {
@@ -33,17 +33,22 @@ namespace CrashPluginExample
             getString.AcceptEnterWhenDone(true);
             getString.AcceptNothing(true);
             getString.SetWaitDuration(10_000);
+            getString.SetCommandPrompt("Name");
 
             string userName = string.Empty;
 
             var result = GetResult.NoResult;
             while (result != GetResult.Timeout)
             {
+                result = getString.Get();
                 if (result == GetResult.Nothing)
                     break;
 
                 else if (result == GetResult.String)
+                {
                     userName = getString.StringResult();
+                    break;
+                }
             }
 
             if (string.IsNullOrEmpty(userName))

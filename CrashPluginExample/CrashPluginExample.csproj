@@ -14,10 +14,10 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Crash.Plugins" Version="1.4.0-beta" />
     <PackageReference Include="Crash.Changes" Version="1.2.0" />
-    <PackageReference Include="RhinoCommon" Version="7.21.22208.13001" IncludeAssets="compile;build" Condition="'$(TargetFramework)' == 'net48'"/>
-		<PackageReference Include="RhinoCommon" Version="8.3.24009.15001" IncludeAssets="compile;build" Condition="'$(TargetFramework)' == 'net7.0'"/>
+    <PackageReference Include="Crash.Plugins" Version="1.4.0-beta" />
+    <PackageReference Include="RhinoCommon" Version="7.21.22208.13001" IncludeAssets="compile;build" Condition="'$(TargetFramework)' == 'net48'" />
+		<PackageReference Include="RhinoCommon" Version="8.3.24009.15001" IncludeAssets="compile;build" Condition="'$(TargetFramework)' == 'net7.0'" />
   </ItemGroup>
   
   <ItemGroup>
